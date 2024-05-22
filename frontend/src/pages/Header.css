@@ -1,0 +1,20 @@
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.titulo-header {
+    flex: 1; 
+    font-size: 8px;
+}
+
+.links-header {
+    display: flex; 
+}
+
+.links-header > * {
+    margin-left: 30px; 
+    color: #CBD0F7;
+}
