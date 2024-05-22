@@ -5,6 +5,7 @@ import Footer from './pages/Footer'
 import Create from './components/Create'
 import Read from './components/Read'
 import Update from './components/Update'
+import Delete from './components/Delete'
 
 
 import{ BrowserRouter as Router, Routes, Route,Link} from 'react-router-dom';
@@ -29,6 +30,7 @@ function App() {
         <Route path='/Create' element={<Create/>}/>
         <Route path='/Read' element={<Read/>}/>
         <Route path='/Update' element={<Update/>}/>
+        <Route path='/Delete' element={<Delete/>}/>
         </Routes>
       </main>
 
