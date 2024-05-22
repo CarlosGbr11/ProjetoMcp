@@ -8,7 +8,7 @@ import Update from './components/Update'
 import Delete from './components/Delete'
 
 
-import{ BrowserRouter as Router, Routes, Route,Link} from 'react-router-dom';
+import{ BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 
 function App() {
  
