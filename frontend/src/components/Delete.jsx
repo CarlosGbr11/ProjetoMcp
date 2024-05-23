@@ -38,7 +38,7 @@ function Delete() {
 
     return (
         <form onSubmit={handleSubmit} className="delete-form">
-            <label htmlFor="id">ID a ser deletado:</label>
+            <label>ID a ser deletado</label>
             <input type="text" name="id" id="id" value={formValores.id} onChange={handleChange} />
             <br />
             <button type="submit" className="delete-button">Deletar</button>
