@@ -10,5 +10,5 @@ export function update(id, novoDados, callback) {
     connection.query('UPDATE pessoas_dados set ? where id = ?', [novoDados,id], callback);
 }
 export function deletePes(id, callback) {
-    connection.query('UPDATE pessoas_dados set ativo_pessoa = 0 where id = ?', [id], callback);
+    connection.query('DELETE from pessoas_dados where id_pessoa = ?', [id], callback);
 }
