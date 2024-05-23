@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import './Delete.css';
 
 function Delete() {
 
@@ -31,17 +32,18 @@ function Delete() {
             console.log(response)
             console.log(json);
         } catch (err) {
-            console.error("Erro ao enviar", err)
+            console.error("Erro ao enviar", err);
         }
- };
+    };
 
- return(
-    <form onSubmit={handleSubmit}>
-        ID a ser deletado:
-        <input type="text" name="id" value={formValores.id} onChange={handleChange}/>
-        <br />
-        <button type="submit" onClick={handleSubmit}>Deletar</button>
-    </form>
- );
+    return (
+        <form onSubmit={handleSubmit} className="delete-form">
+            <label htmlFor="id">ID a ser deletado:</label>
+            <input type="text" name="id" id="id" value={formValores.id} onChange={handleChange} />
+            <br />
+            <button type="submit" className="delete-button">Deletar</button>
+        </form>
+    );
 }
+
 export default Delete;
