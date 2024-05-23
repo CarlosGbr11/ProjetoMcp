@@ -25,8 +25,9 @@ export async function getAllPessoas(req, res) {
 
 export async function updatePessoa(req, res) {
     const { id } = req.params;
-    const novoDados = req.body;
-    update(id, novoDados, (err, result) => {
+    console.log('Dados recebidops do  frontend:', {id});
+    const { nome, dataNascimento, genero, cpf, telefone} = req.body;
+    update(nome, dataNascimento, genero, cpf, telefone, id, (err, result) => {
         if (err) {
             res.status(500).json({ error: err.message });
             return;
@@ -37,6 +38,7 @@ export async function updatePessoa(req, res) {
 
 export async function deletePessoa(req, res) {
     const { id } = req.params;
+    console.log('delete recebidos do frontend:', {id});
     deletePes(id, (err, result) => {
         if (err) {
             res.status(500).json({ error: err.message });
