@@ -71,9 +71,7 @@ function Create() {
             <button type='submit'> CADASTRAR </button>
   
           </div>
-  
         </div>
-  
       </form>
     )
   
