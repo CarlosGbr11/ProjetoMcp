@@ -5,7 +5,7 @@ const Home = () =>{
 
     return(
         <div>
-            <p>QQQQQQQQQQQQQQQQ</p>
+            <p>Q</p>
         </div>
     )
 }
