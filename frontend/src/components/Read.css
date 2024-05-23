@@ -1,0 +1,37 @@
+.read-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.read-form {
+    display: flex;
+    justify-content: center;
+}
+
+.read-button {
+    padding: 10px 20px;
+    margin: 20px 0;
+    background-color: #5568FE;
+    color: #CBD0F7;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.read-button:hover {
+    background-color: #3a0491;
+}
+
+.read-dados {
+    background-color: #181920;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dados {
+    margin-bottom: 5px;
+}
